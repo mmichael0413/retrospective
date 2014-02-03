@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem 'pg'
 gem 'haml-rails'
+gem 'angularjs-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -44,6 +45,6 @@ gem 'unicorn'
 # gem 'debugger', group: [:development, :test]
 
 group :development, :test do
-  gem 'annotate'
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git', branch: 'develop'
   gem 'quiet_assets'
 end
